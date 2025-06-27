@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- activate main branch -->
+<body class=" text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark py-4 custom-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="#">
+        <img src="./pics/imgi_1_logo.png" width="32" alt="icon" />
+        <span class="fw-bold">Weather</span>
+      </a>
+      <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Live cameras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero-banner d-flex justify-content-center align-items-center flex-column">
+    <div class="input-group search-box mx-auto">
+      <input type="text" class="form-control" id="cityInput" placeholder="Enter city name..." />
+    </div>
+  </div>
+
+
+  <section class="weather-cards text-white">
+    <div class="container">
+      <div id="weatherCards" class="row g-4 justify-content-center">
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

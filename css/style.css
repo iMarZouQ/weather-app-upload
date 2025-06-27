@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111827;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.custom-navbar {
+  background-color: #0b0d1c;
+  border-bottom: 1px solid #1f1f2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-link {
+  color: #ccc;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+
+.hero-banner {
+  background: url('../pics/banner.png') no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.search-box {
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  background-color: rgba(16, 24, 47, 0.9);
+}
+
+input.form-control {
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+input.form-control::placeholder {
+  color: #bbb;
+}
+
+.weather-cards {
+  position: absolute;
+  top: 55vh;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.card-box {
+  background-color: #161d2f;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-box img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.card-box h5 {
+  font-size: 1.2rem;
+  color: #00bfff;
+}
+
+.card-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.search-box input.form-control {
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: rgba(16, 24, 47, 0.9);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
